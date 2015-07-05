@@ -8,10 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		260AB4B77E8F2C2DB6FBB945 /* Pods_HISwiftExtensions_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52579E1A6A633307624E846 /* Pods_HISwiftExtensions_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		344640891B49E84D0025F79D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344640881B49E84D0025F79D /* String.swift */; };
+		3446408B1B49E87D0025F79D /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446408A1B49E87D0025F79D /* NSDate.swift */; };
+		3446408D1B49E8CD0025F79D /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446408C1B49E8CD0025F79D /* Int.swift */; };
+		3446408F1B49E9130025F79D /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446408E1B49E9130025F79D /* NSAttributedString.swift */; };
+		344640911B49E94F0025F79D /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344640901B49E94F0025F79D /* Dictionary.swift */; };
+		344640931B49E9900025F79D /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344640921B49E9900025F79D /* Array.swift */; };
+		344640951B49E9E10025F79D /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344640941B49E9E10025F79D /* UIImage.swift */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		344640881B49E84D0025F79D /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		3446408A1B49E87D0025F79D /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
+		3446408C1B49E8CD0025F79D /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		3446408E1B49E9130025F79D /* NSAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
+		344640901B49E94F0025F79D /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		344640921B49E9900025F79D /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		344640941B49E9E10025F79D /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = HISwiftExtensions_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
@@ -38,6 +52,13 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				344640941B49E9E10025F79D /* UIImage.swift */,
+				344640921B49E9900025F79D /* Array.swift */,
+				344640901B49E94F0025F79D /* Dictionary.swift */,
+				3446408E1B49E9130025F79D /* NSAttributedString.swift */,
+				3446408C1B49E8CD0025F79D /* Int.swift */,
+				3446408A1B49E87D0025F79D /* NSDate.swift */,
+				344640881B49E84D0025F79D /* String.swift */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -127,6 +148,7 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
@@ -218,6 +240,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				344640951B49E9E10025F79D /* UIImage.swift in Sources */,
+				3446408B1B49E87D0025F79D /* NSDate.swift in Sources */,
+				344640931B49E9900025F79D /* Array.swift in Sources */,
+				3446408F1B49E9130025F79D /* NSAttributedString.swift in Sources */,
+				344640891B49E84D0025F79D /* String.swift in Sources */,
+				3446408D1B49E8CD0025F79D /* Int.swift in Sources */,
+				344640911B49E94F0025F79D /* Dictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

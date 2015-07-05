@@ -1,0 +1,14 @@
+PODS:
+  - HISwiftExtensions (0.1.0)
+
+DEPENDENCIES:
+  - HISwiftExtensions (from `../`)
+
+EXTERNAL SOURCES:
+  HISwiftExtensions:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HISwiftExtensions: 5b366fdf938bd8cf1a15516af6968626393559a3
+
+COCOAPODS: 0.37.2

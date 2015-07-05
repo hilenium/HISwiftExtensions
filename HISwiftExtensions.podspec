@@ -10,19 +10,15 @@
 Pod::Spec.new do |s|
   s.name             = "HISwiftExtensions"
   s.version          = "0.1.0"
-  s.summary          = "A short description of HISwiftExtensions."
+  s.summary          = "This is a library of some useful Swift extensions developed while building the hilenium.com iOS app"
   s.description      = <<-DESC
-                       An optional longer description of HISwiftExtensions
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                        This is a library of some useful Swift extensions developed while building the [Hilenium] (http://hilenium.com) iOS Phone application.
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/HISwiftExtensions"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/hilenium/HISwiftExtensions"
   s.license          = 'MIT'
-  s.author           = { "Matt" => "matt@pelofy.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/HISwiftExtensions.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Matthew Clarkson" => "matt@hilenium.com" }
+  s.source           = { :git => "https://github.com/hilenium/HISwiftExtensions.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/mpclarkson'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
@@ -32,7 +28,4 @@ Pod::Spec.new do |s|
     'HISwiftExtensions' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

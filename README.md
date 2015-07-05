@@ -5,11 +5,17 @@
 [![License](https://img.shields.io/cocoapods/l/HISwiftExtensions.svg?style=flat)](http://cocoapods.org/pods/HISwiftExtensions)
 [![Platform](https://img.shields.io/cocoapods/p/HISwiftExtensions.svg?style=flat)](http://cocoapods.org/pods/HISwiftExtensions)
 
+## Intro
+
+This is a library of some useful Swift extensions developed while building the [Hilenium] (http://hilenium.com) iOS Phone application. 
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+Swift 2.0
 
 ## Installation
 
@@ -22,7 +28,7 @@ pod "HISwiftExtensions"
 
 ## Author
 
-Matt, matt@pelofy.com
+Matthew Clarkson, matt@hilenium.com
 
 ## License
 
