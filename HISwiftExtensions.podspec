@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Matthew Clarkson" => "matt@hilenium.com" }
   s.source           = { :git => "https://github.com/hilenium/HISwiftExtensions.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/mattclarkson'
+  s.social_media_url = 'https://twitter.com/matt_clarkson'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
