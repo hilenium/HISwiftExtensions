@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "HISwiftExtensions"
-  s.version          = "0.0.1"
+  s.version          = "0.1.1"
   s.summary          = "This is a library of some useful Swift extensions developed while building the hilenium.com iOS app"
   s.description      = <<-DESC
                         This is a library of some useful Swift extensions developed while building the [Hilenium] (http://hilenium.com) iOS Phone application.
