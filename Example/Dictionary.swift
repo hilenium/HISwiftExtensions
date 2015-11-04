@@ -8,7 +8,13 @@
 
 import Foundation
 
-extension Dictionary {
+public func += <KeyType, ValueType> (inout left: Dictionary<KeyType, ValueType>, right: Dictionary<KeyType, ValueType>) {
+    for (k, v) in right {
+        left.updateValue(v, forKey: k)
+    }
+}
+
+public extension Dictionary {
     mutating func merge<K, V>(dictionary: [K: V]){
         for (k, v) in dictionary {
             self.updateValue(v as! Value, forKey: k as! Key)

@@ -8,8 +8,8 @@
 
 import Foundation
 
-extension Array {
-    func contains<T where T : Equatable>(object: T) -> Bool {
-        return self.filter({$0 as? T == object}).count > 0
+public extension Array {
+    func contains<T:Equatable>(object: T) -> Bool {
+        return self.filter( {$0 as? T == object} ).count > 0
     }
 }

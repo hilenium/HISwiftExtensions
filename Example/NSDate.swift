@@ -8,12 +8,9 @@
 
 import Foundation
 
-
 //MARK: - Date Comparable
 
-extension NSDate: Comparable {
-    
-}
+extension NSDate: Comparable {}
 
 public func <(a: NSDate, b: NSDate) -> Bool {
     return a.compare(b) == NSComparisonResult.OrderedAscending
@@ -26,7 +23,12 @@ public func ==(a: NSDate, b: NSDate) -> Bool {
 
 //MARK: - TimeAgo
 
-extension NSDate {
+public extension NSDate {
+    
+    func addSeconds(seconds: Int) -> NSDate {
+        let interval = NSTimeInterval(seconds)
+        return self.dateByAddingTimeInterval(interval)
+    }
     
     func timeAgo(numericDates:Bool = true) -> String {
         

@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension NSAttributedString {
+public extension NSAttributedString {
     func replaceHTMLTag(tag: String, withAttributes attributes: [String: AnyObject]) -> NSAttributedString {
         let openTag = "<\(tag)>"
         let closeTag = "</\(tag)>"

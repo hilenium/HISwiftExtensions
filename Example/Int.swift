@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Int {
+public extension Int {
     
     func times(f: () -> () ) {
         for _ in 0..<self {
@@ -22,7 +22,7 @@ extension Int {
         }
     }
     func downto(n: Int, f: (Int) -> () ) {
-        for i in stride(from: self, through: n, by: -1) {
+        for i in stride(through: self, by: -1) {
             f(i)
         }
     }
