@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                         This is a library of some useful Swift extensions developed while building the [Hilenium] (http://hilenium.com) iOS Phone application.
                         DESC
-  s.homepage         = "https://github.com/hilenium/HISwiftExtension"
+  s.homepage         = "https://github.com/hilenium/HISwiftExtensions"
   s.license          = 'MIT'
   s.author           = { "Matthew Clarkson" => "matt@hilenium.com" }
   s.source           = { :git => "https://github.com/hilenium/HISwiftExtensions.git", :tag => s.version.to_s }
