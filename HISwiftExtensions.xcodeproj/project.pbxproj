@@ -23,6 +23,7 @@
 		34CEF7511C2BA84A0085BD57 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CEF7361C2BA84A0085BD57 /* UIViewController.swift */; };
 		34CEF75C1C2BAA1E0085BD57 /* HISwiftExtensions.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 34CEF75B1C2BAA1E0085BD57 /* HISwiftExtensions.podspec */; };
 		34CEF75E1C2BAC770085BD57 /* LICENSE in Sources */ = {isa = PBXBuildFile; fileRef = 34CEF75D1C2BAC770085BD57 /* LICENSE */; };
+		34CEF7601C2BAF040085BD57 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 34CEF75F1C2BAF040085BD57 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		34CEF7361C2BA84A0085BD57 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = src/UIViewController.swift; sourceTree = "<group>"; };
 		34CEF75B1C2BAA1E0085BD57 /* HISwiftExtensions.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HISwiftExtensions.podspec; sourceTree = "<group>"; };
 		34CEF75D1C2BAC770085BD57 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = src/LICENSE; sourceTree = "<group>"; };
+		34CEF75F1C2BAF040085BD57 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				34CEF75D1C2BAC770085BD57 /* LICENSE */,
 				34CDE9131C2BA711001533C6 /* HISwiftExtensions.h */,
 				34CDE9151C2BA712001533C6 /* Info.plist */,
+				34CEF75F1C2BAF040085BD57 /* README.md */,
 			);
 			path = HISwiftExtensions;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				34CEF74C1C2BA84A0085BD57 /* SequenceType.swift in Sources */,
 				34CEF74D1C2BA84A0085BD57 /* String.swift in Sources */,
 				34CEF73A1C2BA84A0085BD57 /* Int.swift in Sources */,
+				34CEF7601C2BAF040085BD57 /* README.md in Sources */,
 				34CEF75E1C2BAC770085BD57 /* LICENSE in Sources */,
 				34CEF7371C2BA84A0085BD57 /* Array.swift in Sources */,
 				34CEF7381C2BA84A0085BD57 /* Dictionary.swift in Sources */,
