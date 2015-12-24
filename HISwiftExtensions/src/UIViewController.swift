@@ -21,7 +21,7 @@ public extension UIViewController {
         dispatch_async(dispatch_get_main_queue(), {
             let activityIndicator = UIActivityIndicatorView(
                 activityIndicatorStyle: activityIndicatorStyle)
-            activityIndicator.tag = tag
+            activityIndicator.tag = self.tag
             activityIndicator.center = loc
             activityIndicator.hidesWhenStopped = true
             activityIndicator.startAnimating()
@@ -32,7 +32,7 @@ public extension UIViewController {
     public func stopActivityIndicator() {
         
         dispatch_async(dispatch_get_main_queue(), {
-            guard let activityIndicator = view.subviews.filter({ $0.tag == tag})
+            guard let activityIndicator = self.view.subviews.filter({ $0.tag == self.tag})
                 .first as? UIActivityIndicatorView else { return }
             
             activityIndicator.stopAnimating()
