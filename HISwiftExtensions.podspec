@@ -1,4 +1,3 @@
-
 Pod::Spec.new do |s|
 
   s.name                = "HISwiftExtensions"
@@ -15,4 +14,6 @@ Pod::Spec.new do |s|
   s.source              = { :git => "https://github.com/hilenium/HISwiftExtensions.git", :tag => s.version.to_s }
   s.homepage            = "https://github.com/hilenium/HISwiftExtensions"
   s.source_files        = "HISwiftExtensions/**/*.{swift}"
+
 end
+
