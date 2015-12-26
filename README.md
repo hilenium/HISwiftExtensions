@@ -24,7 +24,7 @@ pod "HISwiftExtensions"
 
 ## Documentation
 
-Read the [docs](docs/index.html) 
+Read the [documentation](https://hilenium.github.io/HISwiftExtensions/) 
 
 ##Tests 
 
