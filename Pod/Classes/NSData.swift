@@ -8,8 +8,7 @@
 
 import Foundation
 
-extension NSData {
-
-    var string: String? { return NSString(data: self, encoding: NSUTF8StringEncoding) as String? }
+public extension NSData {
     
+    public var string: String? { return NSString(data: self, encoding: NSUTF8StringEncoding) as String? }
 }

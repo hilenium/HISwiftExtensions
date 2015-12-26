@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34CEF7761C2E99B90085BD57 /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CEF7751C2E99B90085BD57 /* DictionaryTests.swift */; };
+		34CEF7781C2E9B850085BD57 /* IntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CEF7771C2E9B850085BD57 /* IntTests.swift */; };
+		34CEF77A1C2E9D3B0085BD57 /* NSAttributedStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CEF7791C2E9D3B0085BD57 /* NSAttributedStringTests.swift */; };
+		34CEF77C1C2EA5050085BD57 /* NSDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CEF77B1C2EA5050085BD57 /* NSDataTests.swift */; };
 		3BF4ECFEB6BB9EA88910A392 /* Pods_HISwiftExtensions_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1E86115795EF2F233D06A8 /* Pods_HISwiftExtensions_Tests.framework */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		607FACEC1AFB9204008FA782 /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* ArrayTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34CEF7751C2E99B90085BD57 /* DictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
+		34CEF7771C2E9B850085BD57 /* IntTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntTests.swift; sourceTree = "<group>"; };
+		34CEF7791C2E9D3B0085BD57 /* NSAttributedStringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedStringTests.swift; sourceTree = "<group>"; };
+		34CEF77B1C2EA5050085BD57 /* NSDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDataTests.swift; sourceTree = "<group>"; };
 		450AA94C3E467559FCE939BA /* Pods-HISwiftExtensions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HISwiftExtensions_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HISwiftExtensions_Tests/Pods-HISwiftExtensions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = HISwiftExtensions_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* HISwiftExtensions_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HISwiftExtensions_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
 		6F426D2460A359DF00533710 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		768A08C2819022FA19CF8C4E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7943A2086CA9232F11A42199 /* Pods-HISwiftExtensions_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HISwiftExtensions_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HISwiftExtensions_Tests/Pods-HISwiftExtensions_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -49,7 +57,7 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACE51AFB9204008FA782 /* Tests.xctest */,
+				607FACE51AFB9204008FA782 /* HISwiftExtensions_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,7 +65,11 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				607FACEB1AFB9204008FA782 /* ArrayTests.swift */,
+				34CEF7751C2E99B90085BD57 /* DictionaryTests.swift */,
+				34CEF7771C2E9B850085BD57 /* IntTests.swift */,
+				34CEF7791C2E9D3B0085BD57 /* NSAttributedStringTests.swift */,
+				34CEF77B1C2EA5050085BD57 /* NSDataTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -118,7 +130,7 @@
 			);
 			name = HISwiftExtensions_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* HISwiftExtensions_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -218,7 +230,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				34CEF7781C2E9B850085BD57 /* IntTests.swift in Sources */,
+				34CEF77C1C2EA5050085BD57 /* NSDataTests.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* ArrayTests.swift in Sources */,
+				34CEF7761C2E99B90085BD57 /* DictionaryTests.swift in Sources */,
+				34CEF77A1C2E9D3B0085BD57 /* NSAttributedStringTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 450AA94C3E467559FCE939BA /* Pods-HISwiftExtensions_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -329,6 +346,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7943A2086CA9232F11A42199 /* Pods-HISwiftExtensions_Tests.release.xcconfig */;
 			buildSettings = {
+				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

@@ -9,10 +9,13 @@
 import Foundation
 
 public extension NSAttributedString {
+    
     public func replaceHTMLTag(tag: String, withAttributes attributes: [String: AnyObject]) -> NSAttributedString {
+        
         let openTag = "<\(tag)>"
         let closeTag = "</\(tag)>"
         let result: NSMutableAttributedString = self.mutableCopy() as! NSMutableAttributedString
+        
         while true {
             let string = result.string as NSString
             let openTagRange = string.rangeOfString(openTag)
