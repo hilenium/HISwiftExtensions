@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
   s.platform            = :ios, "8.0"
   s.requires_arc        = true
   s.source              = { :git => "https://github.com/hilenium/HISwiftExtensions.git", :tag => s.version.to_s }
-  s.homepage            = "https://github.com/hilenium/HISwiftExtensions"
-  s.source_files        = "HISwiftExtensions/**/*.{swift}"
+  s.homepage            = 'https://github.com/hilenium/HISwiftExtensions'
+  s.source_files        = 'Pod/Classes/**/*.{swift}'
 
 end
 
