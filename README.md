@@ -22,6 +22,18 @@ it, simply add the following line to your Podfile:
 pod "HISwiftExtensions"
 ```
 
+## Documentation
+
+Read the [docs](docs/index.html) 
+
+##Tests 
+
+Run the tests using xctool:
+
+```bash
+xctool -workspace Example/HISwiftExtensions.xcworkspace -scheme HISwiftExtensions-Example
+```
+
 ## Author
 
 Matthew Clarkson, matt AT hilenium.com
