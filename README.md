@@ -7,7 +7,7 @@
 
 ## Intro
 
-This is a library of some useful Swift extensions developed while building the [Hilenium] (http://hilenium.com) iOS Phone application. 
+This is a library of some useful Swift extensions developed while building the [Hilenium] (http://hilenium.com) iOS Phone application.
 
 ## Requirements
 
@@ -24,7 +24,7 @@ pod "HISwiftExtensions"
 
 ## Author
 
-Matthew Clarkson, matt@hilenium.com
+Matthew Clarkson, matt AT hilenium.com
 
 ## License
 
