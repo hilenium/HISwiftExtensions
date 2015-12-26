@@ -1,0 +1,25 @@
+{
+  "name": "HISwiftExtensions",
+  "version": "0.1.0",
+  "summary": "A short description of HISwiftExtensions.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/HISwiftExtensions",
+  "license": "MIT",
+  "authors": {
+    "Matthew Clarkson": "mpclarkson@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/HISwiftExtensions.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "HISwiftExtensions": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
