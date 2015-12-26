@@ -2,9 +2,11 @@ language: objective-c
 podfile: Example/Podfile
 osx_image: xcode7.2
 rvm:  2.2.3
+xcode_project: Example/HISwiftExtensions.xcworkspace # path to your xcodeproj folder
+xcode_scheme: HISwiftExtensions-Example
 before_install:
  - gem install cocoapods -v '0.39'
  - pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -workspace Example/HISwiftExtensions.xcworkspace -scheme HISwiftExtensions-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
+# - set -o pipefail && xcodebuild test -workspace Example/HISwiftExtensions.xcworkspace -scheme HISwiftExtensions-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
