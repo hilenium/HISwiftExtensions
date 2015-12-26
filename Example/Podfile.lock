@@ -1,5 +1,5 @@
 PODS:
-  - HISwiftExtensions (0.1.0)
+  - HISwiftExtensions (0.3.1)
   - Nimble (3.0.0)
   - Quick (0.8.0)
 
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HISwiftExtensions: 0460699a3cda26aa939e7dd156902f277548fe9c
+  HISwiftExtensions: 804f761cdb0c4e4c9576dd92ecbb264989041d83
   Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
   Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
 
