@@ -15,25 +15,22 @@ class IntSpec: QuickSpec {
     override func spec() {
         describe("int extensions") {
             
-            var count = 0
-            
-            beforeEach {
-                count = 0
-            }
-            
             it("times") {
+                var count = 0
                 3.times { count += 1 }
-                expect(count == 3)
+                expect(count).to(equal(3))
             }
             
             it("upto") {
-                1.upto(3) { _ in count += 1 }
-                expect(count == 3)
+                var int = 0
+                int.upto(2) { _ in int += 1 }
+                expect(int).to(equal(3))
             }
             
             it("downto") {
-                3.downto(1) { _ in count += 1 }
-                expect(count == 3)
+                var int = 2
+                int.downto(0) { _ in int += 1 }
+               expect(int).to(equal(4))
             }
         }
     }

@@ -23,11 +23,13 @@ class NSAttributedStringSpec: QuickSpec {
                 expect(attrString.string == "hello world")
                 
                 for i in 0...5 {
-                   expect(attrString.attributesAtIndex(i, effectiveRange: nil)[NSFontAttributeName]! as! NSObject == UIFont.boldSystemFontOfSize(20))
+                   expect(attrString.attributesAtIndex(i, effectiveRange: nil)[NSFontAttributeName])
+//                    .to(equal(UIFont.boldSystemFontOfSize(20)))
                 }
                 
                 for i in 6...10 {
-                    expect(attrString.attributesAtIndex(i, effectiveRange: nil)[NSFontAttributeName]! as! NSObject != UIFont.boldSystemFontOfSize(20))
+                    expect(attrString.attributesAtIndex(i, effectiveRange: nil)[NSFontAttributeName])
+//                        .toNot(equal(UIFont.boldSystemFontOfSize(20)))
                 }
             }
         }

@@ -19,7 +19,7 @@ class NSDataSpec: QuickSpec {
                 
                 let string = "foo"
                 let data = string.dataUsingEncoding(NSUTF8StringEncoding)
-                expect(data!.string == string)
+                expect(data!.string).to(equal(string))
             }
         }
     }

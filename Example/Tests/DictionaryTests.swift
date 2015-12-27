@@ -10,7 +10,7 @@ import Quick
 import Nimble
 import HISwiftExtensions
 
-class DictionarySpec: QuickSpec {
+class DictionaryExtensionsSpec: QuickSpec {
     
     override func spec() {
         describe("dictionary extensions") {
@@ -25,8 +25,8 @@ class DictionarySpec: QuickSpec {
             
             it("merge") {
                 a.merge(b)
-                expect(a["a"] == "a")
-                expect(a["b"] == "b")
+                expect(a["a"]).to(equal("a"))
+                expect(a["b"]).to(equal("b"))
             }
         }
     }

@@ -23,8 +23,9 @@ public extension Int {
     }
     
     public func downto(n: Int, f: (Int) -> () ) {
-        for i in stride(through: self, by: -1) {
-            f(i)
+        if n > self { return }
+        self.stride(to: n, by: -1).forEach {
+            f($0)
         }
     }
 }

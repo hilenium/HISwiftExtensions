@@ -10,7 +10,7 @@ import Quick
 import Nimble
 import HISwiftExtensions
 
-class ArraySpec: QuickSpec {
+class ArrayExtensionsSpec: QuickSpec {
     
     override func spec() {
         describe("array extension") {
@@ -22,11 +22,11 @@ class ArraySpec: QuickSpec {
             }
             
             it("contains") {
-                expect(array.contains("a"))
+                expect(array.contains("a")).to(equal(true))
             }
 
             it("does not contain") {
-                expect(!array.contains("d"))
+                expect(array.contains("d")).to(equal(false))
            }
         }
     }
