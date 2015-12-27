@@ -13,7 +13,7 @@
     <a title="Int Extension Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">HISwiftExtensions Docs</a> (20% documented)</p>
+        <p><a href="../index.html">HISwiftExtensions Docs</a> (93% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -69,6 +69,14 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a href="../Subscripts.html">Subscripts</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Subscripts.html#/s:sE17HISwiftExtensionsSS9subscriptFSiVSs9Character">subscript(_:)</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -99,16 +107,51 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Performs a closure the given number of times</p>
+
+<div class="aside aside-parameter">
+          <p class="aside-title">Parameter</p>
+          <p>Parameter f: The closure</p>
+
+        </div><div class="aside aside-returns">
+          <p class="aside-title">Returns</p>
+          <p>Void</p>
+
+        </div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">struct</span> <span class="kt">Int</span> <span class="p">:</span> <span class="kt">SignedIntegerType</span><span class="p">,</span> <span class="kt">Comparable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">times</span><span class="p">(</span><span class="nv">f</span><span class="p">:</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">()</span> <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>f</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Void</p>
+
                       </div>
                     </section>
                   </div>
@@ -126,16 +169,68 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Performs a closure on each int between <code>self</code> and <code>n</code> (counting up)</p>
+
+<div class="aside aside-parameter">
+          <p class="aside-title">Parameter</p>
+          <p>Parameter n: The up to number</p>
+
+        </div><div class="aside aside-parameter">
+          <p class="aside-title">Parameter</p>
+          <p>Parameter f: The closure</p>
+
+        </div><div class="aside aside-returns">
+          <p class="aside-title">Returns</p>
+          <p>Void</p>
+
+        </div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">struct</span> <span class="kt">Int</span> <span class="p">:</span> <span class="kt">SignedIntegerType</span><span class="p">,</span> <span class="kt">Comparable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">upto</span><span class="p">(</span><span class="nv">n</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">f</span><span class="p">:</span> <span class="p">(</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()</span> <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>n</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The up to number</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>f</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Void</p>
+
                       </div>
                     </section>
                   </div>
@@ -153,16 +248,68 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Performs a closure on each int between <code>self</code> and <code>n</code> (counting down)</p>
+
+<div class="aside aside-parameter">
+          <p class="aside-title">Parameter</p>
+          <p>Parameter n: The up to number</p>
+
+        </div><div class="aside aside-parameter">
+          <p class="aside-title">Parameter</p>
+          <p>Parameter f: The closure</p>
+
+        </div><div class="aside aside-returns">
+          <p class="aside-title">Returns</p>
+          <p>Void</p>
+
+        </div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">struct</span> <span class="kt">Int</span> <span class="p">:</span> <span class="kt">SignedIntegerType</span><span class="p">,</span> <span class="kt">Comparable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">downto</span><span class="p">(</span><span class="nv">n</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">f</span><span class="p">:</span> <span class="p">(</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()</span> <span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>n</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The up to number</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>f</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Void</p>
+
                       </div>
                     </section>
                   </div>

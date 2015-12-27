@@ -13,7 +13,7 @@
     <a title="NSAttributedString Extension Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">HISwiftExtensions Docs</a> (20% documented)</p>
+        <p><a href="../index.html">HISwiftExtensions Docs</a> (93% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -69,6 +69,14 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a href="../Subscripts.html">Subscripts</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Subscripts.html#/s:sE17HISwiftExtensionsSS9subscriptFSiVSs9Character">subscript(_:)</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -94,7 +102,67 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Replaces html tags in an attributed string with the given attributes.</p>
+
+<div class="aside aside-parameter">
+          <p class="aside-title">Parameter</p>
+          <p>Parameter tag: The tag to replace without opening and closing &lt;&gt; e.g. <q>strong</q> = <strong></strong></p>
+
+        </div><div class="aside aside-parameter">
+          <p class="aside-title">Parameter</p>
+          <p>Parameter withAttributes: A dictionary <code>[String: AnyObject]</code> of attributes</p>
+
+        </div><div class="aside aside-returns">
+          <p class="aside-title">Returns</p>
+          <p>NSAttributedString - the tag replaced by the given attributes.</p>
+
+        </div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">replaceHTMLTag</span><span class="p">(</span><span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withAttributes</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">NSAttributedString</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The tag to replace without opening and closing &lt;&gt; e.g. <q>strong</q> = <strong></strong></p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>withAttributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A dictionary <code>[String: AnyObject]</code> of attributes</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>NSAttributedString - the tag replaced by the given attributes.</p>
 
                       </div>
                     </section>

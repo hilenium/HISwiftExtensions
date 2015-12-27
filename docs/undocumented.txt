@@ -1,32 +1,4 @@
-Array.swift
-	public func contains<T:Equatable>(object: T) -> Bool
 Dictionary.swift
 	public func += <KeyType, ValueType> (inout left: Dictionary<KeyType, ValueType>, right: Dictionary<KeyType, ValueType>)
-	public mutating func merge<K, V>(dictionary: [K: V])
-Int.swift
-	public func times(f: () -> () )
-	public func upto(n: Int, f: (Int) -> () )
-	public func downto(n: Int, f: (Int) -> () )
-NSAttributedString.swift
-	public func replaceHTMLTag(tag: String, withAttributes attributes: [String: AnyObject]) -> NSAttributedString
-NSData.swift
-	public var string: String? { return NSString(data: self, encoding: NSUTF8StringEncoding) as String? }
-NSDate.swift
-	public func <(a: NSDate, b: NSDate) -> Bool
-	public func ==(a: NSDate, b: NSDate) -> Bool
-	public func addSeconds(seconds: Int) -> NSDate
-	public func timeAgo(numericDates:Bool = true) -> String
 String.swift
-	public var uppercaseFirst: String
-	public var trim: String
-	public func truncate(length: Int, trailing: String? = "...") -> String
-	public var urlEncode: String
-	public func split(delimiter: String) -> [String]
-	public var isValidEmail:Bool
-	public var count:Int { return self.characters.count }
-	public func toDate(format:String = "yyyy-MM-dd'T'HH:mm:ssZZZZ") -> NSDate?
 	public func boldStrongTags(size:CGFloat, color:UIColor = UIColor.blackColor()) -> NSAttributedString
-	public var stripHTML: String?
-UIImage.swift
-	public func tint(tintColor: UIColor) -> UIImage
-	public class func getImageWithColor(color: UIColor, size: CGSize) -> UIImage
