@@ -13,6 +13,7 @@
 		34CEF77C1C2EA5050085BD57 /* NSDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CEF77B1C2EA5050085BD57 /* NSDataTests.swift */; };
 		34CEF77E1C2FA2780085BD57 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CEF77D1C2FA2780085BD57 /* StringTests.swift */; };
 		34CEF7801C2FE37F0085BD57 /* NSDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CEF77F1C2FE37F0085BD57 /* NSDateTests.swift */; };
+		34CEF7821C30AF900085BD57 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CEF7811C30AF900085BD57 /* Package.swift */; };
 		3BF4ECFEB6BB9EA88910A392 /* Pods_HISwiftExtensions_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1E86115795EF2F233D06A8 /* Pods_HISwiftExtensions_Tests.framework */; };
 		607FACEC1AFB9204008FA782 /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* ArrayTests.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		34CEF77B1C2EA5050085BD57 /* NSDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDataTests.swift; sourceTree = "<group>"; };
 		34CEF77D1C2FA2780085BD57 /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		34CEF77F1C2FE37F0085BD57 /* NSDateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateTests.swift; sourceTree = "<group>"; };
+		34CEF7811C30AF900085BD57 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		450AA94C3E467559FCE939BA /* Pods-HISwiftExtensions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HISwiftExtensions_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HISwiftExtensions_Tests/Pods-HISwiftExtensions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* HISwiftExtensions_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HISwiftExtensions_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				34CEF7811C30AF900085BD57 /* Package.swift */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -240,6 +243,7 @@
 				34CEF7801C2FE37F0085BD57 /* NSDateTests.swift in Sources */,
 				34CEF77C1C2EA5050085BD57 /* NSDataTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* ArrayTests.swift in Sources */,
+				34CEF7821C30AF900085BD57 /* Package.swift in Sources */,
 				34CEF7761C2E99B90085BD57 /* DictionaryTests.swift in Sources */,
 				34CEF77E1C2FA2780085BD57 /* StringTests.swift in Sources */,
 				34CEF77A1C2E9D3B0085BD57 /* NSAttributedStringTests.swift in Sources */,
