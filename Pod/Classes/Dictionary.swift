@@ -14,9 +14,18 @@ public func += <KeyType, ValueType> (inout left: Dictionary<KeyType, ValueType>,
     }
 }
 
+
 public extension Dictionary {
+    
+    /**
+     Merges two dictionararies. Values are updated or added to the dictionary on the left.
+     
+     - Parameter dictionary: The dictionary to merge. with `self`
+     
+     - Returns: Dictionary
+     */
     public mutating func merge<K, V>(dictionary: [K: V]){
-        for (k, v) in dictionary {
+        dictionary.forEach { k, v in
             self.updateValue(v as! Value, forKey: k as! Key)
         }
     }

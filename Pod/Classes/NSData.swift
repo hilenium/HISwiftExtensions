@@ -10,5 +10,10 @@ import Foundation
 
 public extension NSData {
     
+    /**
+     Converts NSData to a string, if possible
+     
+     - Returns: String?
+     */
     public var string: String? { return NSString(data: self, encoding: NSUTF8StringEncoding) as String? }
 }

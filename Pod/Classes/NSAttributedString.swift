@@ -10,6 +10,15 @@ import Foundation
 
 public extension NSAttributedString {
     
+    /**
+     Replaces html tags in an attributed string with the given attributes.
+     
+     - Parameter tag: The tag to replace without opening and closing <> e.g. "strong" = <strong></strong>
+     
+     - Parameter withAttributes: A dictionary `[String: AnyObject]` of attributes
+     
+     - Returns: NSAttributedString - the tag replaced by the given attributes.
+     */
     public func replaceHTMLTag(tag: String, withAttributes attributes: [String: AnyObject]) -> NSAttributedString {
         
         let openTag = "<\(tag)>"

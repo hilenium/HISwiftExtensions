@@ -10,12 +10,21 @@ import Foundation
 
 //MARK: - Date Comparable
 
+/**
+NSDate comforms to `Comparable` protocol
+*/
 extension NSDate: Comparable {}
 
+/**
+ NSDate less than comparison
+ */
 public func <(a: NSDate, b: NSDate) -> Bool {
     return a.compare(b) == NSComparisonResult.OrderedAscending
 }
 
+/**
+ NSDate equal than comparison
+ */
 public func ==(a: NSDate, b: NSDate) -> Bool {
     return a.compare(b) == NSComparisonResult.OrderedSame
 }
@@ -24,11 +33,27 @@ public func ==(a: NSDate, b: NSDate) -> Bool {
 
 public extension NSDate {
     
+    /**
+     Add seconds to a date
+     
+     - Parameter seconds: int - the number of seconds to add
+     
+     - Returns: NSDate
+     
+     */
     public func addSeconds(seconds: Int) -> NSDate {
         let interval = NSTimeInterval(seconds)
         return self.dateByAddingTimeInterval(interval)
     }
     
+    /**
+     Converts a date to a string representation (e.g. 1 month ago)
+     
+     - Parameter numericDates: bool - true returns strings such as "1 day ago" false returns strings such as "Yesterday"
+     
+     - Returns: String
+     
+     */
     public func timeAgo(numericDates:Bool = true) -> String {
         
         let calendar = NSCalendar.currentCalendar()

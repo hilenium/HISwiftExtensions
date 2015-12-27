@@ -10,6 +10,14 @@ import UIKit
 
 public extension UIImage {
     
+    /**
+     Adds a tint to an image
+     
+     - Parameter tintColor: UIColor as the tint
+     
+     - Returns: UIImage
+     
+     */
     public func tint(tintColor: UIColor) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
         
@@ -29,6 +37,16 @@ public extension UIImage {
         return newImage
     }
     
+    /**
+     Creates an image of a solid color
+     
+     - Parameter color: UIColor - the image color
+     
+     - Parameter size: CGSize - the size of the image
+     
+     - Returns: UIImage
+     
+     */
      public class func getImageWithColor(color: UIColor, size: CGSize) -> UIImage {
         let rect = CGRectMake(0, 0, size.width, size.height)
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
