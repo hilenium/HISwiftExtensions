@@ -1,6 +1,6 @@
 # HISwiftExtensions
 
-[![CI Status](http://img.shields.io/travis/Hilenium/HISwiftExtensions.svg?style=flat)](https://travis-ci.org/hilenium/HISwiftExtensions)
+[![CI Status](http://img.shields.io/travis/hilenium/HISwiftExtensions.svg?style=flat)](https://travis-ci.org/hilenium/HISwiftExtensions)
 [![Version](https://img.shields.io/cocoapods/v/HISwiftExtensions.svg?style=flat)](http://cocoapods.org/pods/HISwiftExtensions)
 [![License](https://img.shields.io/cocoapods/l/HISwiftExtensions.svg?style=flat)](http://cocoapods.org/pods/HISwiftExtensions)
 [![Platform](https://img.shields.io/cocoapods/p/HISwiftExtensions.svg?style=flat)](http://cocoapods.org/pods/HISwiftExtensions)
