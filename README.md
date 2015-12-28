@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/HISwiftExtensions.svg?style=flat)](http://cocoapods.org/pods/HISwiftExtensions)
 [![License](https://img.shields.io/cocoapods/l/HISwiftExtensions.svg?style=flat)](http://cocoapods.org/pods/HISwiftExtensions)
 [![Platform](https://img.shields.io/cocoapods/p/HISwiftExtensions.svg?style=flat)](http://cocoapods.org/pods/HISwiftExtensions)
+[![Docs](https://img.shields.io/cocoapods/metrics/doc-percent/HISwiftExtensions.svg?style=flat)](http://cocoapods.org/pods/HISwiftExtensions)
 
 ## Intro
 
