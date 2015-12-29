@@ -6,9 +6,9 @@
 //  Copyright © 2015 Hilenium. All rights reserved.
 //
 
-import PackageDescription
-
-let package = Package(
-    name: "HISwiftExtensions"
-)
+//import PackageDescription
+//
+//let package = Package(
+//    name: "HISwiftExtensions"
+//)
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>NSData Extension Reference</title>
+    <title>NSURL Extension Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -9,8 +9,8 @@
     <script src="../js/jazzy.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Extension/NSData" class="dashAnchor"></a>
-    <a title="NSData Extension Reference"></a>
+    <a name="//apple_ref/swift/Extension/NSURL" class="dashAnchor"></a>
+    <a title="NSURL Extension Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">HISwiftExtensions Docs</a> (94% documented)</p>
@@ -20,7 +20,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">HISwiftExtensions Reference</a>
         <img id="carat" src="../img/carat.png" />
-        NSData Extension Reference
+        NSURL Extension Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -85,20 +85,8 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>NSData</h1>
-              <div class="declaration">
-                <div class="language">
-                  <pre class="highlight"><code><span class="kd">class</span> <span class="kt">NSData</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSCopying</span><span class="p">,</span> <span class="kt">NSMutableCopying</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
-
-                </div>
-              </div>
-            <p>Converts NSData to a string, if possible</p>
-
-<div class="aside aside-returns">
-          <p class="aside-title">Returns</p>
-          String?
-
-        </div>
+            <h1>NSURL</h1>
+            <p>Undocumented</p>
 
           </section>
           <section class="section task-group-section">
@@ -107,9 +95,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vE17HISwiftExtensionsCSo6NSData6stringGSqSS_"></a>
-                    <a name="//apple_ref/swift/Property/string" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vE17HISwiftExtensionsCSo6NSData6stringGSqSS_">string</a>
+                    <a name="/s:vE17HISwiftExtensionsCSo5NSURL15queryParametersGVSs10DictionarySSSS_"></a>
+                    <a name="//apple_ref/swift/Property/queryParameters" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE17HISwiftExtensionsCSo5NSURL15queryParametersGVSs10DictionarySSSS_">queryParameters</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -117,11 +105,11 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Converts NSData to a string, if possible</p>
+                        <p>Gets the query parameters from an nsurl</p>
 
 <div class="aside aside-returns">
           <p class="aside-title">Returns</p>
-          String?
+          An optional dictionary of query parameters
 
         </div>
 
@@ -130,13 +118,51 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">return</span> <span class="kt">NSString</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="k">self</span><span class="p">,</span> <span class="nv">encoding</span><span class="p">:</span> <span class="kt">NSUTF8StringEncoding</span><span class="p">)</span> <span class="k">as</span> <span class="kt">String</span><span class="p">?</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">queryParameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span><span class="kt">String</span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>String?</p>
+                        <p>An optional dictionary of query parameters</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE17HISwiftExtensionsCSo5NSURLcFMS0_FT14optionalStringGSqSS__GSqS0__"></a>
+                    <a name="//apple_ref/swift/Method/init(optionalString:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE17HISwiftExtensionsCSo5NSURLcFMS0_FT14optionalStringGSqSS__GSqS0__">init(optionalString:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Failable convenience initializer that accepts an optional string</p>
+
+<div class="aside aside-returns">
+          <p class="aside-title">Returns</p>
+          An NSURL or nil
+
+        </div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">convenience</span> <span class="nf">init</span><span class="p">?(</span><span class="n">optionalString</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An NSURL or nil</p>
 
                       </div>
                     </section>

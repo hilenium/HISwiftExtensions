@@ -15,6 +15,12 @@ class StringExtensionsSpec: QuickSpec {
     override func spec() {
         describe("string extensions") {
             
+            it("underscore to camelCase") {
+                let s = "foo_bar"
+                let k = s.underscoreToCamelCase
+                expect(k).to(equal("fooBar"))
+            }
+            
             it("uppercase first") {
                 let s = "foo"
                 let u = s.uppercaseFirst

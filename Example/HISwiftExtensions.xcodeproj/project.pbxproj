@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34AB592D1C32266F00148596 /* NSURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AB592C1C32266F00148596 /* NSURLTests.swift */; };
 		34CEF7761C2E99B90085BD57 /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CEF7751C2E99B90085BD57 /* DictionaryTests.swift */; };
 		34CEF7781C2E9B850085BD57 /* IntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CEF7771C2E9B850085BD57 /* IntTests.swift */; };
 		34CEF77A1C2E9D3B0085BD57 /* NSAttributedStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CEF7791C2E9D3B0085BD57 /* NSAttributedStringTests.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34AB592C1C32266F00148596 /* NSURLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLTests.swift; sourceTree = "<group>"; };
 		34CEF7751C2E99B90085BD57 /* DictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
 		34CEF7771C2E9B850085BD57 /* IntTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntTests.swift; sourceTree = "<group>"; };
 		34CEF7791C2E9D3B0085BD57 /* NSAttributedStringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedStringTests.swift; sourceTree = "<group>"; };
@@ -75,10 +77,11 @@
 				607FACEB1AFB9204008FA782 /* ArrayTests.swift */,
 				34CEF7751C2E99B90085BD57 /* DictionaryTests.swift */,
 				34CEF7771C2E9B850085BD57 /* IntTests.swift */,
+				34CEF77D1C2FA2780085BD57 /* StringTests.swift */,
 				34CEF7791C2E9D3B0085BD57 /* NSAttributedStringTests.swift */,
 				34CEF77B1C2EA5050085BD57 /* NSDataTests.swift */,
-				34CEF77D1C2FA2780085BD57 /* StringTests.swift */,
 				34CEF77F1C2FE37F0085BD57 /* NSDateTests.swift */,
+				34AB592C1C32266F00148596 /* NSURLTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -244,6 +247,7 @@
 				34CEF77C1C2EA5050085BD57 /* NSDataTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* ArrayTests.swift in Sources */,
 				34CEF7861C30B6EC0085BD57 /* Package.swift in Sources */,
+				34AB592D1C32266F00148596 /* NSURLTests.swift in Sources */,
 				34CEF7761C2E99B90085BD57 /* DictionaryTests.swift in Sources */,
 				34CEF77E1C2FA2780085BD57 /* StringTests.swift in Sources */,
 				34CEF77A1C2E9D3B0085BD57 /* NSAttributedStringTests.swift in Sources */,

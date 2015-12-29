@@ -11,6 +11,21 @@ import UIKit
 public extension String {
     
     /**
+     Changes underscores to camelCase
+     
+     - Returns: String with all instances of `_char` replaced with `Char`
+     
+     */
+    public var underscoreToCamelCase: String {
+        let items = self.componentsSeparatedByString("_")
+        var camelCase = ""
+        items.enumerate().forEach {
+            camelCase += 0 == $0 ? $1 : $1.capitalizedString
+        }
+        return camelCase
+    }
+    
+    /**
      Sets the first character in a string to uppercase.
      
      - Returns: String

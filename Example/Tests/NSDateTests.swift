@@ -51,7 +51,7 @@ class NSDateExtensionsSpec: QuickSpec {
                 
                 let date2 = NSCalendar.currentCalendar().dateByAddingUnit(.Second, value: -1, toDate: NSDate(), options: [])
                 
-                expect(date2?.timeAgo(false)).to(equal("Just n0w"))
+                expect(date2?.timeAgo(false)).to(equal("Just now"))
             }
             
             it("time ago - 1 minute ago") {

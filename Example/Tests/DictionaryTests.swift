@@ -15,19 +15,50 @@ class DictionaryExtensionsSpec: QuickSpec {
     override func spec() {
         describe("dictionary extensions") {
             
-            var a: [String: String]!
-            var b: [String: String]!
-            
-            beforeEach {
-                a = ["a" : "a"]
-                b = ["b" : "b"]
-            }
-            
             it("merge") {
+                
+                var a = ["a" : "a"]
+                let b = ["b" : "b"]
+
                 a.merge(b)
                 expect(a["a"]).to(equal("a"))
                 expect(a["b"]).to(equal("b"))
             }
+            
+            it("keys to camel case") {
+               
+                let d = [
+                    "a_property" : [
+                        "nested_property" : "foo"
+                    ]
+                ]
+                
+                let dict = d.keysToCamelCase
+                expect(Array(dict.keys).first).to(equal("aProperty"))
+                expect(Array(dict["aProperty"]!.keys).first).to(equal("nestedProperty"))
+            }
+            
+            it("filter keys") {
+                
+                class Test: NSObject {
+                    var a: AnyObject?
+                    var b: AnyObject?
+                }
+                
+                var dict = [
+                    "a" : "foo",
+                    "b" : "bar",
+                    "c" : "foobar",
+                ]
+                
+                dict.filterKeys(Test())
+                
+                let keys = Array(dict.keys)
+                expect(keys.contains("a")).to(equal(true))
+                expect(keys.contains("b")).to(equal(true))
+                expect(keys.contains("c")).to(equal(false))
+            }
+
         }
     }
 }

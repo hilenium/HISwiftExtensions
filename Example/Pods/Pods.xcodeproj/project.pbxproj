@@ -23,6 +23,7 @@
 		33264C6A7A3536AD91EF42B3E8CC8220 /* BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BB6589A73F51F073DF050F55D7F41 /* BeGreaterThanOrEqualTo.swift */; };
 		33514FEE6EA65605EFB6F1801834B692 /* AssertionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0C995C72A44C02A9369FA2BDB1F4FF /* AssertionDispatcher.swift */; };
 		33C0567598A9EC267EFE20372AE39716 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53AA24C9A265BFA9691B2FF173FDB90 /* NSAttributedString.swift */; };
+		34AB592B1C32265300148596 /* NSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AB592A1C32265300148596 /* NSURL.swift */; };
 		36DC90F918BD219D945E10BE1FFD0080 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDE1AA7066CA88B6B1A53C8A6E46E5B /* NSDate.swift */; };
 		3A92AEE86034356AF8987F20EE1F82DF /* EndWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B6303CCFDEBF93094E92D50CAFF38 /* EndWith.swift */; };
 		3AEAC447B09E7AABC140654C8529BC94 /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43EEEBE209F0CF242FBC231937E6922 /* MatcherFunc.swift */; };
@@ -143,6 +144,7 @@
 		2B9040AB08CA7AEB727960E284F746A4 /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Nimble/DSL.swift; sourceTree = "<group>"; };
 		2FE24AE8654BDA8234080C23F6335E26 /* BeEmpty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeEmpty.swift; path = Nimble/Matchers/BeEmpty.swift; sourceTree = "<group>"; };
 		33DD2CC5441C4540A072B29E4A257A9D /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Quick/DSL/DSL.swift; sourceTree = "<group>"; };
+		34AB592A1C32265300148596 /* NSURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURL.swift; sourceTree = "<group>"; };
 		37C83B1869A4E37E146422BA1E7C4095 /* HISwiftExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HISwiftExtensions-umbrella.h"; sourceTree = "<group>"; };
 		38715BF4570032AE706B97AB11365E48 /* ExampleMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleMetadata.swift; path = Quick/ExampleMetadata.swift; sourceTree = "<group>"; };
 		3EAA4F29CB2AED6B4664AB49BD38D3D9 /* Pods_HISwiftExtensions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HISwiftExtensions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -395,6 +397,7 @@
 				F434E9B80B8B995F78190D25FCEFFF28 /* NSData.swift */,
 				8BDE1AA7066CA88B6B1A53C8A6E46E5B /* NSDate.swift */,
 				68F35FF0AB3B7FED2B03C278FE3720F5 /* String.swift */,
+				34AB592A1C32265300148596 /* NSURL.swift */,
 				778ACDCB46D5E32764FC6C543A922DAD /* UIImage.swift */,
 			);
 			path = Classes;
@@ -662,6 +665,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34AB592B1C32265300148596 /* NSURL.swift in Sources */,
 				7C1BDFD53A967AEC316F7F9156127CE6 /* Array.swift in Sources */,
 				AB484C08613B3FFB1FEDF421BB726FF0 /* Dictionary.swift in Sources */,
 				86A54D8ECADA99DD8328AD56A038F7DF /* HISwiftExtensions-dummy.m in Sources */,
