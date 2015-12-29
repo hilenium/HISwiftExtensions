@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		343DECC91C3238F0001E667F /* SequenceTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343DECC81C3238F0001E667F /* SequenceTypeTests.swift */; };
 		34AB592D1C32266F00148596 /* NSURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AB592C1C32266F00148596 /* NSURLTests.swift */; };
 		34CEF7761C2E99B90085BD57 /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CEF7751C2E99B90085BD57 /* DictionaryTests.swift */; };
 		34CEF7781C2E9B850085BD57 /* IntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CEF7771C2E9B850085BD57 /* IntTests.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		343DECC81C3238F0001E667F /* SequenceTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceTypeTests.swift; sourceTree = "<group>"; };
 		34AB592C1C32266F00148596 /* NSURLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLTests.swift; sourceTree = "<group>"; };
 		34CEF7751C2E99B90085BD57 /* DictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
 		34CEF7771C2E9B850085BD57 /* IntTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntTests.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				34CEF77B1C2EA5050085BD57 /* NSDataTests.swift */,
 				34CEF77F1C2FE37F0085BD57 /* NSDateTests.swift */,
 				34AB592C1C32266F00148596 /* NSURLTests.swift */,
+				343DECC81C3238F0001E667F /* SequenceTypeTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -242,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				343DECC91C3238F0001E667F /* SequenceTypeTests.swift in Sources */,
 				34CEF7781C2E9B850085BD57 /* IntTests.swift in Sources */,
 				34CEF7801C2FE37F0085BD57 /* NSDateTests.swift in Sources */,
 				34CEF77C1C2EA5050085BD57 /* NSDataTests.swift in Sources */,
