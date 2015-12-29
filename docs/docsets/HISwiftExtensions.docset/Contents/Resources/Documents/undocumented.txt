@@ -1,4 +1,6 @@
 Dictionary.swift
 	public func += <KeyType, ValueType> (inout left: Dictionary<KeyType, ValueType>, right: Dictionary<KeyType, ValueType>)
+SequenceType.swift
+	func group<U : Hashable>(@noescape keyFunc: Generator.Element-> U) -> [U:[Generator.Element]]
 String.swift
 	public func boldStrongTags(size:CGFloat, color:UIColor = UIColor.blackColor()) -> NSAttributedString
