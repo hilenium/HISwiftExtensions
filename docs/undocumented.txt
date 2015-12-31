@@ -1,6 +1,9 @@
 Dictionary.swift
 	public func += <KeyType, ValueType> (inout left: Dictionary<KeyType, ValueType>, right: Dictionary<KeyType, ValueType>)
-SequenceType.swift
-	func group<U : Hashable>(@noescape keyFunc: Generator.Element-> U) -> [U:[Generator.Element]]
+RawRepresentable.swift
+	public protocol SegueHandlerType
+	public protocol SegueHandlerType
 String.swift
 	public func boldStrongTags(size:CGFloat, color:UIColor = UIColor.blackColor()) -> NSAttributedString
+UIViewController.swift
+	public var activityIndicatorTag: Int { return 999999 }
