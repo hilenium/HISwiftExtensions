@@ -22,3 +22,31 @@ public extension RawRepresentable {
         self = value
     }
 }
+
+public protocol SegueHandlerType {
+    typealias SegueIdentifier: RawRepresentable
+}
+
+public extension SegueHandlerType where Self: UIViewController, SegueIdentifier.RawValue == String {
+    
+    /**
+    Type safe segue using the raw value of an enumeration. A fatal error occurs if the SegueIdentifier enum init does not
+     succeed
+     
+     - Parameter segueIdentifier: SegueIdentifier (must be a string)
+     
+     - Parameter sender: SegueIdentifier
+     
+     */
+    public func performSegueWithIdentifier(segueIdentifier: SegueIdentifier, sender: AnyObject?) {
+        performSegueWithIdentifier(segueIdentifier.rawValue, sender: sender)
+    }
+    
+    internal func segueIdentifierForSegue(segue: UIStoryboardSegue) -> SegueIdentifier {
+        guard let identifier = segue.identifier, segueIdentifier = SegueIdentifier(rawValue: identifier) else {
+            fatalError("Invalid identifier \(segue.identifier).")
+        }
+        
+        return segueIdentifier
+    }
+}
