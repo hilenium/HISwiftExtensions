@@ -10,10 +10,18 @@ import Foundation
 
 public extension SequenceType {
     
-    func group<U : Hashable>(@noescape keyFunc: Generator.Element-> U) -> [U:[Generator.Element]] {
+    /**
+     Groups a sequence by applying a closure to each element
+     
+     - Parameter closure: The closure to apply to each element
+     
+     - Returns: Dictionary grouping the original input but the closure return value
+     
+     */
+    public func group<U : Hashable>(@noescape closure: Generator.Element-> U) -> [U:[Generator.Element]] {
         var dict: [U:[Generator.Element]] = [:]
         self.forEach {
-            let key = keyFunc($0)
+            let key = closure($0)
             if case nil = dict[key]?.append($0) { dict[key] = [$0] }
         }
         return dict

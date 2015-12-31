@@ -23,6 +23,8 @@
 		33264C6A7A3536AD91EF42B3E8CC8220 /* BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BB6589A73F51F073DF050F55D7F41 /* BeGreaterThanOrEqualTo.swift */; };
 		33514FEE6EA65605EFB6F1801834B692 /* AssertionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0C995C72A44C02A9369FA2BDB1F4FF /* AssertionDispatcher.swift */; };
 		33C0567598A9EC267EFE20372AE39716 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53AA24C9A265BFA9691B2FF173FDB90 /* NSAttributedString.swift */; };
+		343272D11C34D19C00F43993 /* RawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343272D01C34D19C00F43993 /* RawRepresentable.swift */; };
+		343272D31C34D1D300F43993 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343272D21C34D1D300F43993 /* UIViewController.swift */; };
 		343DECC71C3238D0001E667F /* SequenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343DECC61C3238D0001E667F /* SequenceType.swift */; };
 		34AB592B1C32265300148596 /* NSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AB592A1C32265300148596 /* NSURL.swift */; };
 		36DC90F918BD219D945E10BE1FFD0080 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDE1AA7066CA88B6B1A53C8A6E46E5B /* NSDate.swift */; };
@@ -145,6 +147,8 @@
 		2B9040AB08CA7AEB727960E284F746A4 /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Nimble/DSL.swift; sourceTree = "<group>"; };
 		2FE24AE8654BDA8234080C23F6335E26 /* BeEmpty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeEmpty.swift; path = Nimble/Matchers/BeEmpty.swift; sourceTree = "<group>"; };
 		33DD2CC5441C4540A072B29E4A257A9D /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Quick/DSL/DSL.swift; sourceTree = "<group>"; };
+		343272D01C34D19C00F43993 /* RawRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawRepresentable.swift; sourceTree = "<group>"; };
+		343272D21C34D1D300F43993 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		343DECC61C3238D0001E667F /* SequenceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceType.swift; sourceTree = "<group>"; };
 		34AB592A1C32265300148596 /* NSURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURL.swift; sourceTree = "<group>"; };
 		37C83B1869A4E37E146422BA1E7C4095 /* HISwiftExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HISwiftExtensions-umbrella.h"; sourceTree = "<group>"; };
@@ -398,10 +402,12 @@
 				E53AA24C9A265BFA9691B2FF173FDB90 /* NSAttributedString.swift */,
 				F434E9B80B8B995F78190D25FCEFFF28 /* NSData.swift */,
 				8BDE1AA7066CA88B6B1A53C8A6E46E5B /* NSDate.swift */,
-				68F35FF0AB3B7FED2B03C278FE3720F5 /* String.swift */,
 				34AB592A1C32265300148596 /* NSURL.swift */,
+				68F35FF0AB3B7FED2B03C278FE3720F5 /* String.swift */,
 				778ACDCB46D5E32764FC6C543A922DAD /* UIImage.swift */,
 				343DECC61C3238D0001E667F /* SequenceType.swift */,
+				343272D01C34D19C00F43993 /* RawRepresentable.swift */,
+				343272D21C34D1D300F43993 /* UIViewController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -671,9 +677,11 @@
 				34AB592B1C32265300148596 /* NSURL.swift in Sources */,
 				7C1BDFD53A967AEC316F7F9156127CE6 /* Array.swift in Sources */,
 				AB484C08613B3FFB1FEDF421BB726FF0 /* Dictionary.swift in Sources */,
+				343272D11C34D19C00F43993 /* RawRepresentable.swift in Sources */,
 				86A54D8ECADA99DD8328AD56A038F7DF /* HISwiftExtensions-dummy.m in Sources */,
 				EF01AA1BFC7F33398C03F206DA81F64E /* Int.swift in Sources */,
 				33C0567598A9EC267EFE20372AE39716 /* NSAttributedString.swift in Sources */,
+				343272D31C34D1D300F43993 /* UIViewController.swift in Sources */,
 				343DECC71C3238D0001E667F /* SequenceType.swift in Sources */,
 				BD58F6632865768F4FEEA10AF6BD3CFF /* NSData.swift in Sources */,
 				36DC90F918BD219D945E10BE1FFD0080 /* NSDate.swift in Sources */,

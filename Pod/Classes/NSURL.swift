@@ -16,7 +16,7 @@ public extension NSURL {
      - Returns: An optional dictionary of query parameters
      
      */
-    public var queryParameters: [String:String] {
+    public var queryParameters: [String: String] {
         var results: [String:String] = [:]
         let keyValues = self.query?.componentsSeparatedByString("&")
         keyValues?.forEach {
@@ -34,7 +34,7 @@ public extension NSURL {
      - Returns: An NSURL or nil
      
      */
-    convenience init?(optionalString string: String?) {
+    public convenience init?(optionalString string: String?) {
         guard let string = string else { return nil }
         self.init(string: string)
     }
