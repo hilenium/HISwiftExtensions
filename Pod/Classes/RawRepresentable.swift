@@ -30,8 +30,7 @@ public protocol SegueHandlerType {
 public extension SegueHandlerType where Self: UIViewController, SegueIdentifier.RawValue == String {
     
     /**
-    Type safe segue using the raw value of an enumeration. A fatal error occurs if the SegueIdentifier enum init does not
-     succeed
+    Performs a type safe segue using the raw value of an enumeration.
      
      - Parameter segueIdentifier: SegueIdentifier (must be a string)
      
@@ -42,7 +41,15 @@ public extension SegueHandlerType where Self: UIViewController, SegueIdentifier.
         performSegueWithIdentifier(segueIdentifier.rawValue, sender: sender)
     }
     
-    internal func segueIdentifierForSegue(segue: UIStoryboardSegue) -> SegueIdentifier {
+    /**
+     Gets the segueidentifier from the storyboard segue.
+     
+     - Parameter segue: UIStoryboardSegue
+     
+     - Returns: SegueIdentifier
+     
+     */
+    public func segueIdentifierForSegue(segue: UIStoryboardSegue) -> SegueIdentifier {
         guard let identifier = segue.identifier, segueIdentifier = SegueIdentifier(rawValue: identifier) else {
             fatalError("Invalid identifier \(segue.identifier).")
         }
