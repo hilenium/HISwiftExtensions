@@ -25,7 +25,7 @@ class DictionaryExtensionsSpec: QuickSpec {
                 expect(a["b"]).to(equal("b"))
             }
             
-            it("keys to camel case") {
+            it("keys to camelcase") {
                
                 let d = [
                     "a_property" : [
@@ -33,10 +33,28 @@ class DictionaryExtensionsSpec: QuickSpec {
                     ]
                 ]
                 
-                let dict = d.keysToCamelCase
+                let dict = d.keysToCamelCase()
                 expect(Array(dict.keys).first).to(equal("aProperty"))
                 expect(Array(dict["aProperty"]!.keys).first).to(equal("nestedProperty"))
             }
+            
+            it("remove nsnulls") {
+                
+                let d: [String: AnyObject] = [
+                    "null_property" : NSNull(),
+                    "a_property" : "a",
+                    "nested": [
+                        "null_property" : NSNull(),
+                        "a_property" : "a",
+                    ]
+                ]
+                
+                let dict = d.removeNulls()
+                expect(Array(dict.keys).first).to(equal("a_property"))
+                let nested = dict["nested"] as! [String: AnyObject]
+                expect(Array(nested.keys).first).to(equal("a_property"))
+            }
+
             
             it("filter keys") {
                 

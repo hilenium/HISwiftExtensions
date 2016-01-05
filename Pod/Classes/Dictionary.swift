@@ -33,9 +33,9 @@ public extension Dictionary {
     /**
      Recursively changes all `String` dictionary keys from `snake_case` to `camelCase`
      
-     - Returns: Dictionary
+     - Returns: New Dictionary
      */
-    public var keysToCamelCase: Dictionary {
+    public func keysToCamelCase() -> Dictionary {
         
         let keys = Array(self.keys)
         let values = Array(self.values)
@@ -44,8 +44,9 @@ public extension Dictionary {
         keys.enumerate().forEach { (let index, var key) in
             
             var value = values[index]
-            if let v = value as? Dictionary, vl = v.keysToCamelCase as? Value {
-                value = vl
+            
+            if let v = value as? Dictionary, vl = v.keysToCamelCase() as? Value  {
+               value = vl
             }
             
             if let k = key as? String, ky = k.underscoreToCamelCase as? Key {
@@ -57,6 +58,34 @@ public extension Dictionary {
         
         return dict
     }
+    
+    /**
+    Recursively removes all keys where the value is NSNull
+    
+    - Returns: New Dictionary
+    */
+    public func removeNulls() -> Dictionary {
+        
+        let keys = Array(self.keys)
+        let values = Array(self.values)
+        var dict: Dictionary = [:]
+        
+        keys.enumerate().forEach { index, key in
+            
+            var value = values[index]
+            
+            if !(value is NSNull) {
+                if let v = value as? Dictionary, val = v.removeNulls() as? Value  {
+                    value = val
+                }
+                
+                dict[key] = value
+            }
+        }
+        
+        return dict
+    }
+
 
     /**
      Removes keys from a dictionary that are not accessible selectors in an `NSObject` subclass
