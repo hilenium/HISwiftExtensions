@@ -6,11 +6,11 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; th
     echo -e "Installing Jazzy \n"
     gem install jazzy
 
-    echo -e "Creating gh-pages dir \n"
-    mkdir gh-pages
-
-    echo -e "Moving into gh-pages clone \n"
-    pushd gh-pages
+    # echo -e "Creating gh-pages dir \n"
+    # mkdir gh-pages
+    #
+    # echo -e "Moving into gh-pages clone \n"
+    # pushd gh-pages
 
     echo -e "Creating gh-pages repo \n"
     git config --global user.email "travis@travis-ci.org"
@@ -18,7 +18,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; th
     git init
 
     echo -e "Generating documentation \n"
-    jazzy --swift-version 2.1 --source-directory ../ --output ./ --podspec ../HISwiftExtensions.podspec
+    jazzy --swift-version 2.1 --source-directory ../ --output .Resources/documentation --podspec ../HISwiftExtensions.podspec
 
     echo -e "Adding new documentation \n"
     git add -A

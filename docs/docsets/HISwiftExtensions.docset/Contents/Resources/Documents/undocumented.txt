@@ -1,9 +1,0 @@
-Dictionary.swift
-	public func += <KeyType, ValueType> (inout left: Dictionary<KeyType, ValueType>, right: Dictionary<KeyType, ValueType>)
-RawRepresentable.swift
-	public protocol SegueHandlerType
-	public protocol SegueHandlerType
-String.swift
-	public func boldStrongTags(size:CGFloat, color:UIColor = UIColor.blackColor()) -> NSAttributedString
-UIViewController.swift
-	public var activityIndicatorTag: Int { return 999999 }
