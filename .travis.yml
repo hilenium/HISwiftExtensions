@@ -7,6 +7,10 @@ xcode_scheme: HISwiftExtensions-Example
 before_install:
  - gem install cocoapods -v '0.39'
  - pod install --project-directory=Example
+only:
+- master
 script:
 # - set -o pipefail && xcodebuild test -workspace Example/HISwiftExtensions.xcworkspace -scheme HISwiftExtensions-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
+after_success:
+- ./Resources/scripts/docs.sh
