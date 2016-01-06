@@ -5,7 +5,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; th
     echo -e "Installing Jazzy \n"
     gem install jazzy
     echo -e "Generating documentation \n"
-    jazzy --swift-version 2.1 --source-directory ./ --output .Resources/docs --podspec ./HISwiftExtensions.podspec
+    jazzy --swift-version 2.1.1 --source-directory ./ --output .Resources/docs --podspec ./HISwiftExtensions.podspec
     echo -e "Adding new documentation \n"
     git config --global user.email "travis@travis-ci.org"
     git config --global user.name "travis-ci"
