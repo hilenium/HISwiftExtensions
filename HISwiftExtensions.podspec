@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name                = "HISwiftExtensions"
-  s.version             = "0.4.4"
+  s.version             = "0.4.5"
   s.summary             = "This is a library of some useful Swift extensions developed while building the hilenium.com iOS app"
   s.description         = <<-DESC
     This is a library of some useful Swift extensions developed while building the [Hilenium] (http://hilenium.com) iOS Phone application.
@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   s.source              = { :git => "https://github.com/hilenium/HISwiftExtensions.git", :tag => s.version.to_s }
   s.homepage            = 'https://github.com/hilenium/HISwiftExtensions'
   s.source_files        = 'Pod/Classes/**/*.{swift}'
-  # s.documentation_url   = 'https://hilenium.github.io/HISwiftExtensions'
+  s.documentation_url   = 'https://hilenium.github.io/HISwiftExtensions'
 
 end
