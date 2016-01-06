@@ -25,7 +25,6 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; th
     # git push --force --quiet "https://${GH_TOKEN}@github.com/hilenium/HISwiftExtensions" master:gh-pages > /dev/null 2>&1
     git subtree push --prefix Resources/docs origin gh-pages
     echo -e "Published latest docs.\n"
-
-    echo -e "Finished..."
-    popd
+    # echo -e "Finished..."
+    # popd
 fi
