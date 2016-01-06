@@ -17,4 +17,3 @@ Pod::Spec.new do |s|
   s.documentation_url   = 'https://hilenium.github.io/HISwiftExtensions'
 
 end
-
