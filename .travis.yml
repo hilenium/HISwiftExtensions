@@ -9,10 +9,8 @@ before_install:
  - pod install --project-directory=Example
 only:
 - master
-before_script:
-  - chmod +x ./Resources/scripts/docs.sh
 script:
-# - set -o pipefail && xcodebuild test -workspace Example/HISwiftExtensions.xcworkspace -scheme HISwiftExtensions-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
 after_success:
+- chmod +x ./Resources/scripts/docs.sh
 - ./Resources/scripts/docs.sh
