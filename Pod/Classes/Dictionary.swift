@@ -20,7 +20,6 @@ public func += <KeyType, ValueType> (inout left: Dictionary<KeyType, ValueType>,
     }
 }
 
-
 public extension Dictionary {
 
     /**
