@@ -27,7 +27,7 @@ public extension RawRepresentable {
   Allows a view controller to handle type save segues
  */
 public protocol SegueHandlerType {
-    typealias SegueIdentifier: RawRepresentable
+    associatedtype SegueIdentifier: RawRepresentable
 }
 
 public extension SegueHandlerType where Self: UIViewController, SegueIdentifier.RawValue == String {
