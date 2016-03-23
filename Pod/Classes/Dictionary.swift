@@ -14,8 +14,8 @@ import Foundation
  - Parameter right: Dictionary 2
  - Returns: Dictionary
  */
-public func += <KeyType, ValueType> ( left: inout Dictionary<KeyType, ValueType>, right: Dictionary<KeyType, ValueType>) {
-    for (k, v) in right {
+public func += <KeyType, ValueType> ( inout left: Dictionary<KeyType, ValueType>, right: Dictionary<KeyType, ValueType>) {
+    right.forEach { k, v in
         left.updateValue(v, forKey: k)
     }
 }
@@ -46,7 +46,7 @@ public extension Dictionary {
         let values = Array(self.values)
         var dict: Dictionary = [:]
 
-        keys.enumerate().forEach { (index, key) in
+        keys.enumerate().forEach { index, key in
 
             var key = key
             var value = values[index]
