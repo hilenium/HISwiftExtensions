@@ -17,7 +17,7 @@ public extension Array {
      
      - Returns: Bool
      */
-     public func contains<T:Equatable>(object: T) -> Bool {
+     public func contains<T:Equatable>(_ object: T) -> Bool {
         return self.filter( {$0 as? T == object} ).count > 0
     }
 }

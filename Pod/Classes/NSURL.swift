@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension NSURL {
+public extension URL {
 
     /**
      Gets the query parameters from an nsurl
@@ -18,9 +18,9 @@ public extension NSURL {
      */
     public var queryParameters: [String: String] {
         var results: [String:String] = [:]
-        let keyValues = self.query?.componentsSeparatedByString("&")
+        let keyValues = self.query?.components(separatedBy: "&")
         keyValues?.forEach {
-            let kv = $0.componentsSeparatedByString("=")
+            let kv = $0.components(separatedBy: "=")
             if kv.count > 1 {
                 results[kv[0]] = kv[1]
             }
@@ -34,7 +34,7 @@ public extension NSURL {
      - Returns: An NSURL or nil
 
      */
-    public convenience init?(optionalString string: String?) {
+    public init?(optionalString string: String?) {
         guard let string = string else { return nil }
         self.init(string: string)
     }

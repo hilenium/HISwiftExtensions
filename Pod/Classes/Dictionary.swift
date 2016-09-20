@@ -14,7 +14,7 @@ import Foundation
  - Parameter right: Dictionary 2
  - Returns: Dictionary
  */
-public func += <KeyType, ValueType> ( inout left: Dictionary<KeyType, ValueType>, right: Dictionary<KeyType, ValueType>) {
+public func += <KeyType, ValueType> ( left: inout Dictionary<KeyType, ValueType>, right: Dictionary<KeyType, ValueType>) {
     right.forEach { k, v in
         left.updateValue(v, forKey: k)
     }
@@ -29,7 +29,7 @@ public extension Dictionary {
 
      - Returns: Dictionary
      */
-    public mutating func merge<K, V>(dictionary: [K: V]){
+    public mutating func merge<K, V>(_ dictionary: [K: V]){
         dictionary.forEach { k, v in
             self.updateValue(v as! Value, forKey: k as! Key)
         }
@@ -46,16 +46,16 @@ public extension Dictionary {
         let values = Array(self.values)
         var dict: Dictionary = [:]
 
-        keys.enumerate().forEach { index, key in
+        keys.enumerated().forEach { index, key in
 
             var key = key
             var value = values[index]
 
-            if let v = value as? Dictionary, vl = v.keysToCamelCase() as? Value  {
+            if let v = value as? Dictionary, let vl = v.keysToCamelCase() as? Value  {
                value = vl
             }
 
-            if let k = key as? String, ky = k.underscoreToCamelCase as? Key {
+            if let k = key as? String, let ky = k.underscoreToCamelCase as? Key {
                 key = ky
             }
 
@@ -76,12 +76,12 @@ public extension Dictionary {
         let values = Array(self.values)
         var dict: Dictionary = [:]
 
-        keys.enumerate().forEach { index, key in
+        keys.enumerated().forEach { index, key in
 
             var value = values[index]
 
             if !(value is NSNull) {
-                if let v = value as? Dictionary, val = v.removeNulls() as? Value  {
+                if let v = value as? Dictionary, let val = v.removeNulls() as? Value  {
                     value = val
                 }
 
@@ -98,11 +98,11 @@ public extension Dictionary {
 
      - Returns: Dictionary
      */
-    public mutating func filterKeys(object: NSObject) -> Dictionary {
+    public mutating func filterKeys(_ object: NSObject) -> Dictionary {
 
         Array(self.keys).forEach {
-            if let k = $0 as? String where !object.respondsToSelector(Selector(k)){
-                self.removeValueForKey($0)
+            if let k = $0 as? String , !object.responds(to: Selector(k)){
+                self.removeValue(forKey: $0)
             }
         }
 

@@ -17,7 +17,7 @@ public extension Int {
      
      - Returns: Void
      */
-    public func times(f: () -> () ) {
+    public func times(_ f: () -> () ) {
         for _ in 0..<self {
             f()
         }
@@ -32,7 +32,7 @@ public extension Int {
      
      - Returns: Void
      */
-    public func upto(n: Int, f: (Int) -> () ) {
+    public func upto(_ n: Int, f: (Int) -> () ) {
         if n < self { return }
         for i in self...n {
             f(i)
@@ -48,9 +48,10 @@ public extension Int {
      
      - Returns: Void
      */
-    public func downto(n: Int, f: (Int) -> () ) {
+    public func downto(_ n: Int, f: @escaping (Int) -> () ) {
         if n > self { return }
-        self.stride(to: n, by: -1).forEach {
+        
+        Swift.stride(from: self, through: n, by: -1).forEach {
             f($0)
         }
     }

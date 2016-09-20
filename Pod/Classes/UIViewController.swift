@@ -23,11 +23,11 @@ public extension UIViewController {
      Parameter location: `CGPoint` if not specified the `view.center` is applied
 
      */
-    public func startActivityIndicator(style: UIActivityIndicatorViewStyle = .Gray, location: CGPoint? = nil) {
+    public func startActivityIndicator(_ style: UIActivityIndicatorViewStyle = .gray, location: CGPoint? = nil) {
 
         let loc = location ?? self.view.center
 
-        dispatch_async(dispatch_get_main_queue(), {
+        DispatchQueue.main.async(execute: {
             let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: style)
             activityIndicator.tag = self.activityIndicatorTag
             activityIndicator.center = loc
@@ -42,7 +42,7 @@ public extension UIViewController {
      */
     public func stopActivityIndicator() {
 
-        dispatch_async(dispatch_get_main_queue(), {
+        DispatchQueue.main.async(execute: {
             if let activityIndicator = self.view.subviews.filter({ $0.tag == self.activityIndicatorTag}).first as? UIActivityIndicatorView {
                 activityIndicator.stopAnimating()
                 activityIndicator.removeFromSuperview()

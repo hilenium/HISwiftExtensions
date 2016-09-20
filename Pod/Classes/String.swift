@@ -17,10 +17,10 @@ public extension String {
      
      */
     public var underscoreToCamelCase: String {
-        let items = self.componentsSeparatedByString("_")
+        let items = self.components(separatedBy: "_")
         var camelCase = ""
-        items.enumerate().forEach {
-            camelCase += 0 == $0 ? $1 : $1.capitalizedString
+        items.enumerated().forEach {
+            camelCase += 0 == $0 ? $1 : $1.capitalized
         }
         return camelCase
     }
@@ -32,9 +32,9 @@ public extension String {
      
      */
     public var uppercaseFirst: String {
-        let first = self.startIndex
-        let rest = first.advancedBy(1)..<self.endIndex
-        return String(self[first]).uppercaseString + self[rest]
+        let first = String(characters.prefix(1)).capitalized
+        let other = String(characters.dropFirst())
+        return first + other
         
     }
     
@@ -45,7 +45,7 @@ public extension String {
      
      */
     public var trim: String {
-        return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        return self.trimmingCharacters(in: CharacterSet.whitespaces)
     }
     
     /**
@@ -58,10 +58,10 @@ public extension String {
      - Returns: String
      
      */
-    public func truncate(length: Int, trailing: String? = "...") -> String {
+    public func truncate(_ length: Int, trailing: String? = "...") -> String {
         
         return self.characters.count > length
-            ? self.substringToIndex(self.startIndex.advancedBy(length)) + (trailing)!
+            ? self.substring(to: self.characters.index(self.startIndex, offsetBy: length)) + (trailing)!
             : self
     }
     
@@ -70,7 +70,7 @@ public extension String {
      
      */
     public var urlEncode: String {
-        return self.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!
+        return self.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
     }
     
     /**
@@ -81,8 +81,8 @@ public extension String {
      - Returns: [String]
      
      */
-    public func split(delimiter: String) -> [String] {
-        return self.componentsSeparatedByString(delimiter)
+    public func split(_ delimiter: String) -> [String] {
+        return self.components(separatedBy: delimiter)
     }
     
     /**
@@ -94,7 +94,7 @@ public extension String {
     public var isValidEmail:Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        return emailTest.evaluateWithObject(self)
+        return emailTest.evaluate(with: self)
     }
     
     /**
@@ -113,15 +113,15 @@ public extension String {
      - Returns: NSDate?
      
      */
-    public func toDate(format:String = "yyyy-MM-dd'T'HH:mm:ssZZZZ") -> NSDate? {
-        let dateFormatter = NSDateFormatter()
+    public func toDate(_ format:String = "yyyy-MM-dd'T'HH:mm:ssZZZZ") -> Date? {
+        let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
-        return dateFormatter.dateFromString(self)
+        return dateFormatter.date(from: self)
     }
     
-    public func boldStrongTags(size:CGFloat, color:UIColor = UIColor.blackColor()) -> NSAttributedString {
+    public func boldStrongTags(_ size:CGFloat, color:UIColor = UIColor.black) -> NSAttributedString {
         
-        let attributes = [NSFontAttributeName : UIFont.systemFontOfSize(size), NSForegroundColorAttributeName : color]
+        let attributes = [NSFontAttributeName : UIFont.systemFont(ofSize: size), NSForegroundColorAttributeName : color]
         let attributed = NSMutableAttributedString(string: self)
         return attributed.replaceHTMLTag("strong", withAttributes: attributes)
     }
@@ -144,10 +144,10 @@ public extension String {
      */
     public var stripHTML: String? {
         
-        let encodedData = self.dataUsingEncoding(NSUTF8StringEncoding)!
+        let encodedData = self.data(using: String.Encoding.utf8)!
         let attributedOptions:[String: AnyObject] = [
-            NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType,
-            NSCharacterEncodingDocumentAttribute: NSUTF8StringEncoding
+            NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType as AnyObject,
+            NSCharacterEncodingDocumentAttribute: String.Encoding.utf8 as AnyObject
         ]
         
         do {

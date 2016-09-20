@@ -8,12 +8,12 @@
 
 import Foundation
 
-public extension NSData {
+public extension Data {
     
     /**
      Converts NSData to a string, if possible
      
      - Returns: String?
      */
-    public var string: String? { return NSString(data: self, encoding: NSUTF8StringEncoding) as String? }
+    public var string: String? { return NSString(data: self, encoding: String.Encoding.utf8.rawValue) as String? }
 }

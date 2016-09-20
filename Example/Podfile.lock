@@ -1,20 +1,16 @@
 PODS:
-  - HISwiftExtensions (0.3.1)
-  - Nimble (3.0.0)
-  - Quick (0.8.0)
+  - HISwiftExtensions (0.5.0)
 
 DEPENDENCIES:
   - HISwiftExtensions (from `../`)
-  - Nimble (= 3.0.0)
-  - Quick (~> 0.8.0)
 
 EXTERNAL SOURCES:
   HISwiftExtensions:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HISwiftExtensions: 804f761cdb0c4e4c9576dd92ecbb264989041d83
-  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
-  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
+  HISwiftExtensions: 06757c86bacddbfca3fd37a9a88cd0171f3d22e8
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: d6b2c601f6c2c7f5fb5e71f12d3640b69e0c6069
+
+COCOAPODS: 1.0.1

@@ -18,7 +18,7 @@ public extension RawRepresentable {
 
      */
     public init?(optionalRawValue rawValue: RawValue?) {
-        guard let rawValue = rawValue, value = Self(rawValue: rawValue) else { return nil }
+        guard let rawValue = rawValue, let value = Self(rawValue: rawValue) else { return nil }
         self = value
     }
 }
@@ -40,8 +40,8 @@ public extension SegueHandlerType where Self: UIViewController, SegueIdentifier.
      - Parameter sender: SegueIdentifier
 
      */
-    public func performSegueWithIdentifier(segueIdentifier: SegueIdentifier, sender: AnyObject?) {
-        performSegueWithIdentifier(segueIdentifier.rawValue, sender: sender)
+    public func performSegueWithIdentifier(_ segueIdentifier: SegueIdentifier, sender: AnyObject?) {
+        performSegue(withIdentifier: segueIdentifier.rawValue, sender: sender)
     }
 
     /**
@@ -52,8 +52,8 @@ public extension SegueHandlerType where Self: UIViewController, SegueIdentifier.
      - Returns: SegueIdentifier
 
      */
-    public func segueIdentifierForSegue(segue: UIStoryboardSegue) -> SegueIdentifier {
-        guard let identifier = segue.identifier, segueIdentifier = SegueIdentifier(rawValue: identifier) else {
+    public func segueIdentifierForSegue(_ segue: UIStoryboardSegue) -> SegueIdentifier {
+        guard let identifier = segue.identifier, let segueIdentifier = SegueIdentifier(rawValue: identifier) else {
             fatalError("Invalid identifier \(segue.identifier).")
         }
 

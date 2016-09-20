@@ -1,6 +1,6 @@
 {
   "name": "HISwiftExtensions",
-  "version": "0.3.1",
+  "version": "0.5.0",
   "summary": "This is a library of some useful Swift extensions developed while building the hilenium.com iOS app",
   "description": "This is a library of some useful Swift extensions developed while building the [Hilenium] (http://hilenium.com) iOS Phone application.",
   "license": {
@@ -17,8 +17,9 @@
   "requires_arc": true,
   "source": {
     "git": "https://github.com/hilenium/HISwiftExtensions.git",
-    "tag": "0.3.1"
+    "tag": "0.5.0"
   },
   "homepage": "https://github.com/hilenium/HISwiftExtensions",
-  "source_files": "Pod/Classes/**/*.{swift}"
+  "source_files": "Pod/Classes/**/*.{swift}",
+  "documentation_url": "https://hilenium.github.io/HISwiftExtensions"
 }
