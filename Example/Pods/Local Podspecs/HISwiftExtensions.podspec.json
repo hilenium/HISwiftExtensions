@@ -1,6 +1,6 @@
 {
   "name": "HISwiftExtensions",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "summary": "This is a library of some useful Swift extensions developed while building the hilenium.com iOS app",
   "description": "This is a library of some useful Swift extensions developed while building the [Hilenium] (http://hilenium.com) iOS Phone application.",
   "license": {
@@ -12,12 +12,12 @@
   },
   "social_media_url": "http://twitter.com/matt_clarkson",
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "requires_arc": true,
   "source": {
     "git": "https://github.com/hilenium/HISwiftExtensions.git",
-    "tag": "0.5.0"
+    "tag": "0.6.0"
   },
   "homepage": "https://github.com/hilenium/HISwiftExtensions",
   "source_files": "Pod/Classes/**/*.{swift}",
