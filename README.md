@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/HISwiftExtensions.svg?style=flat)](http://cocoapods.org/pods/HISwiftExtensions)
 [![Platform](https://img.shields.io/cocoapods/p/HISwiftExtensions.svg?style=flat)](http://cocoapods.org/pods/HISwiftExtensions)
 
+#THIS IS NO LONGER MAINTAINED
+- use the 0.5.* tags for Swift2 if you really wish.
+
 ## Intro
 
 This is a library of some useful Swift extensions developed while building the [Hilenium](http://hilenium.com) iOS Phone application.
