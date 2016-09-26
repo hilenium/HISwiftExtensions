@@ -6,9 +6,9 @@
 ////  Copyright © 2015 CocoaPods. All rights reserved.
 ////
 //
-//import Quick
-//import Nimble
-//import HISwiftExtensions
+import Quick
+import Nimble
+import HISwiftExtensions
 //
 //class NSURLSpec: QuickSpec {
 //    
@@ -29,7 +29,7 @@
 //                let string: String? = "http://foo.com"
 //                let url = NSURL(optionalString: string)
 //                
-//                expect(url).toNot(equal(.None))
+//                expect(url).toNot(equal(.none))
 //            }
 //            
 //            it("failable convenience initializer - failure") {
@@ -37,7 +37,7 @@
 //                let string: String? = "foo"
 //                let url = NSURL(optionalString: string)
 //                
-//                expect(url).to(equal(.None))
+//                expect(url).to(equal(.none))
 //            }
 //        }
 //    }

@@ -1,11 +1,11 @@
+////
+////  StringTests.swift
+////  HISwiftExtensions
+////
+////  Created by Matthew on 27/12/2015.
+////  Copyright © 2015 CocoaPods. All rights reserved.
+////
 //
-//  StringTests.swift
-//  HISwiftExtensions
-//
-//  Created by Matthew on 27/12/2015.
-//  Copyright © 2015 CocoaPods. All rights reserved.
-//
-
 //import Quick
 //import Nimble
 //import HISwiftExtensions
@@ -86,9 +86,9 @@
 //                
 //                let s = "2000-01-01T00:00:00+00:00"
 //                
-//                let dateFormatter = NSDateFormatter()
+//                let dateFormatter = DateFormatter()
 //                dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZ"
-//                let date = dateFormatter.dateFromString(s)
+//                let date = dateFormatter.date(from: s)
 //                
 //                expect(s.toDate()).to(equal(date))
 //            }

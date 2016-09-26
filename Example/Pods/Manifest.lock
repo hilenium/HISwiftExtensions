@@ -1,35 +1,22 @@
 PODS:
-  - HISwiftExtensions (0.6.0)
+  - HISwiftExtensions (0.6.1)
   - Nimble (5.0.0)
-  - Quick (0.9.3)
+  - Quick (0.10.0)
 
 DEPENDENCIES:
   - HISwiftExtensions (from `../`)
-  - Nimble (from `https://github.com/Quick/Nimble`)
-  - Quick (from `https://github.com/Quick/Quick`, branch `swift-3.0`)
+  - Nimble
+  - Quick
 
 EXTERNAL SOURCES:
   HISwiftExtensions:
     :path: "../"
-  Nimble:
-    :git: https://github.com/Quick/Nimble
-  Quick:
-    :branch: swift-3.0
-    :git: https://github.com/Quick/Quick
-
-CHECKOUT OPTIONS:
-  Nimble:
-    :commit: 0209419661b6acceff45cd63984596f2e9eea517
-    :git: https://github.com/Quick/Nimble
-  Quick:
-    :commit: 36ebbc75e093c7553a5145ed5dd21484364cd78d
-    :git: https://github.com/Quick/Quick
 
 SPEC CHECKSUMS:
-  HISwiftExtensions: 0fd7ad4d8875bc449497507da12c216c40cb6a54
+  HISwiftExtensions: dc67ff33d3a92076679797648a66324ea178d7cf
   Nimble: 56fc9f5020effa2206de22c3dd910f4fb011b92f
-  Quick: 31fb576b6cbb6b028cc5e0016e4366accbb346f5
+  Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
 
-PODFILE CHECKSUM: 8aa81f3198886ad377d0aed131fcce91aeb39e9a
+PODFILE CHECKSUM: d7cd5e8f0cb86ce705530d42248d3103995c0b6e
 
 COCOAPODS: 1.1.0.rc.2
