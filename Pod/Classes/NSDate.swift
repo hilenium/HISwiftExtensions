@@ -48,11 +48,7 @@ public extension Date {
                 return "\(year) years ago"
             }
             else if year >= 1 {
-                if numericDates {
-                    return "1 year ago"
-                } else {
-                    return "Last year"
-                }
+                return numericDates ? "1 year ago" : "Last year"
             }
         }
         else if let month = components.month {
@@ -60,11 +56,7 @@ public extension Date {
                  return "\(month) months ago"
             }
             else if month >= 1 {
-                if numericDates {
-                    return "1 month ago"
-                } else {
-                    return "Last month"
-                }
+                return numericDates ?  "1 month ago" : "Last month"
             }
         }
         else if let week = components.weekOfYear {
@@ -72,11 +64,7 @@ public extension Date {
                  return "\(week) weeks ago"
             }
             else if week >= 1  {
-                if numericDates {
-                    return "1 week ago"
-                } else {
-                    return "Last week"
-                }
+                return numericDates ? "1 week ago" : "Last week"
             }
         }
         else if let day = components.day {
@@ -84,12 +72,7 @@ public extension Date {
                  return "\(day) days ago"
             }
             else if day >= 1 {
-                
-                if numericDates {
-                    return "1 day ago"
-                } else {
-                    return "Yesterday"
-                }
+                return numericDates ? "1 day ago" : "Yesterday"
             }
         
         } else if let hour = components.hour {
@@ -97,11 +80,7 @@ public extension Date {
                  "\(hour) hours ago"
             }
             else if hour >= 1 {
-                if numericDates {
-                    return "1 hour ago"
-                } else {
-                    return "An hour ago"
-                }
+                return numericDates ? "1 hour ago" : "An hour ago"
             }
         }
         
@@ -110,16 +89,12 @@ public extension Date {
                  return "\(minute) minutes ago"
             }
             else if minute >= 1 {
-                if numericDates {
-                    return "1 minute ago"
-                } else {
-                    return "A minute ago"
-                }
+                return numericDates ? "1 minute ago" : "A minute ago"
             }
         } else if let second = components.second, second >= 10 {
             return "\(second) seconds ago"
-        } else {
-            return "Just now"
         }
+        
+        return "Just now"
     }
 }

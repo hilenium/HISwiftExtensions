@@ -27,14 +27,6 @@ pod "HISwiftExtensions"
 
 This library is well documented. View the [documentation](https://hilenium.github.io/HISwiftExtensions/).
 
-##Tests
-
-Run the tests using xctool:
-
-```bash
-xctool -workspace Example/HISwiftExtensions.xcworkspace -scheme HISwiftExtensions-Example
-```
-
 ## Author
 
 Matthew Clarkson, matt AT hilenium.com or [@matt_clarkson](https://twitter.com/matt_clarkson)
